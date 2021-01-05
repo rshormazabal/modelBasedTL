@@ -1,0 +1,35 @@
+task_args
+  type: 'experimental'
+  name': 'critical_temperature'
+preprocessing_args
+  smiles_path:  './data/CAS_SMILES.csv'
+  inference_file: None
+  use_chirality:  True
+  implicit_h: True
+  n_jobs: 4
+  root_path: './'
+split_args
+  split_mode: 'random'
+  bench_threshold: None
+  fold_n: None,
+  test_size: 0.1
+  random_state': 999
+model_args
+  node_features_dim: 26
+  edge_features_dim': 11
+  global_pooling_method: 'global_add'
+  s2s_processing_steps: 3
+  hidden_dim: 256
+  aggr: 'mean'
+  message_passing_steps': 3
+  dropout: 0.3
+  device': 'cuda'
+optimizer_args
+  lr: 5e-4
+  weight_decay: 1e-3
+training_args
+  batch_size: 128
+  epochs: 250
+  val_size: 0.1
+  n_bins: None
+  random_state: 999
