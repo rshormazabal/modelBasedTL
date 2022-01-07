@@ -1,4 +1,4 @@
-# Predicting thermophysical properties through model-based transfer learning using graph convolutional networks
+# Not from scratch: predicting thermophysical properties through model-based transfer learning using graph convolutional networks  
 
 This repository is the official implementation of _"Predicting thermophysical properties through model-based transfer learning using graph convolutional networks"_.
 
